@@ -15,10 +15,5 @@ func main() {
 			State:      "NE",
 			PostalCode: "68111"},
 	}
-	fmt.Println(employee.Name, employee.Salary, employee.Address)
+	fmt.Println(employee.Name, employee.Salary, employee.City, employee.State, employee.Street, employee.PostalCode)
 }
-
-// address.Street = "123 Oak St"
-// address.City = "Omaha"
-// address.State = "NE"
-// address.PostalCode = "68111"

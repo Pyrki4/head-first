@@ -9,7 +9,7 @@ type student struct {
 
 func printInfo(s student) {
 	fmt.Println("Name:", s.name)
-	fmt.Printf("Grade: %0.1f\n", s.grade)
+	fmt.Printf("Grade: 	%0.1f\n", s.grade)
 }
 
 func main() {

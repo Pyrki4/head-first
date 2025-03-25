@@ -8,9 +8,9 @@ type Subscriber struct {
 }
 
 type Employer struct {
-	Name    string
-	Salary  float64
-	Address Address
+	Name   string
+	Salary float64
+	Address
 }
 
 type Address struct {
