@@ -1,13 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
-func snack() {
-	defer fmt.Println("Closing refrigerator")
-	fmt.Println("Opening refrigerator")
-	panic("refrigerator is empty")
+func reportPanic(){
+	p := recover()
+	err, ok := p.(error)
+	if ok {
+		fmt.Println(err)
+	}
 }
 
 func main() {
- snack()
+	defer reportPanic()
+	panic(errors.New("error"))
 }
